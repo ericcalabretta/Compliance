@@ -3,5 +3,6 @@
 .DS_Store
 .DS_Store?
 
+## Hab results dir and individual compliance config
 results/
 habitat/compliance.toml
