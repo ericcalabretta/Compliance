@@ -1,0 +1,14 @@
+interval = 3600
+profiles=["compliance://admin/linux-baseline", "compliance://admin/linux-patch-baseline"]
+
+[reporter]
+stdout = false
+url = "https://FQDNofAutomate/data-collector/v0"
+token = "token"
+verify_ssl = false
+
+[compliance]
+server = "https://FQDNofAutomate"
+token = "token"
+user = "admin"
+insecure = true
