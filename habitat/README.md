@@ -1,4 +1,4 @@
-# Compliance with InSpec as a Habitat package I hope you enjoy!
+# Compliance with InSpec as a Habitat package
 
 ## Description
 The plan treats Compliance as another application you'll manage with Habitat. The plan installs InSpec and will run InSpec with whatever profiles you specify and whatever increment you specify and report the results back to Chef Automate. By default, InSpec will run the linux-baseline & the linux-patch-baseline every hour. 
