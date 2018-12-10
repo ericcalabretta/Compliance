@@ -2,10 +2,12 @@
 
 export SSL_CERT_FILE="{{pkgPathFor "core/cacerts"}}/ssl/cert.pem"
 
+export HOME='/root'
+
 exec 2>&1
 
 while true; do
-{{pkgPathFor "chef/inspec"}}/bin/inspec exec {{#each cfg.profiles as |profile| ~}} {{profile}} {{/each ~}} --json-config /hab/svc/compliance/config/inspec.json
+{{pkgPathFor "chef/inspec"}}/bin/inspec exec {{#each cfg.profiles as |profile| ~}} {{profile}} {{/each ~}} --json-config {{pkg.svc_config_path}}/inspec.json --target-id {{sys.member_id}}
 sleep {{cfg.interval}}
 
 done

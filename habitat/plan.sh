@@ -1,11 +1,13 @@
 pkg_name=compliance
 pkg_origin=eric
-pkg_version="0.1.0"
-pkg_maintainer="Eric Calabretta <ecalabretta@chef.io>"
-pkg_upstream_url=https://www.github.com/ericcalabretta/compliance
+pkg_version="0.1.1"
+pkg_maintainer="eric calabretta <ecalabretta@chef.io>"
 pkg_license=("Apache-2.0")
 pkg_deps=("chef/inspec" "core/cacerts")
 pkg_svc_user="root"
+pkg_binds_optional=(
+  [chef_client_ident]="chef_client_ident"
+)
 
 do_download() {
   return 0;
