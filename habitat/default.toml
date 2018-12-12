@@ -8,7 +8,7 @@ profiles=["compliance://admin@example.com/linux-baseline", "compliance://admin@e
 
 [reporter]
 stdout = false
-url = "url"
+url = "url/data-collector/v0"
 token = "token"
 verify_ssl = true
 
