@@ -13,6 +13,6 @@
         "token" : "{{cfg.compliance.token}}",
         "user" : "{{cfg.compliance.user}}",
         "insecure" : true,
-        "ent" : "{{cfg.compliance.enterprise}}"
+        "ent" : "{{cfg.compliance.ent}}"
     }
   }
