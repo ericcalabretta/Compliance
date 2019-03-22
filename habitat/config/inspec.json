@@ -5,14 +5,14 @@
             "url" : "{{cfg.reporter.url}}",
             "token" : "{{cfg.reporter.token}}",
             "node_name" : "{{ sys.hostname }}",
-            "verify_ssl" : false
+            "verify_ssl" : "{{cfg.reporter.verify_ssl}}"
         }
     },
     "compliance": {
         "server" : "{{cfg.compliance.server}}",
         "token" : "{{cfg.compliance.token}}",
         "user" : "{{cfg.compliance.user}}",
-        "insecure" : true,
+        "insecure" : "{{cfg.compliance.insecure}}",
         "ent" : "{{cfg.compliance.ent}}"
     }
   }
